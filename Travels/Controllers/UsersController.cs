@@ -5,7 +5,7 @@ using Travels.Common;
 namespace Travels.Controllers {
 
     [Produces("application/json")]
-    [Route("[controller]")]
+    [Route("api/Users")]
     public class UsersController : Controller {
 
         private TravelsContext _context;
