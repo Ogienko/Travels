@@ -12,5 +12,7 @@ namespace Travels.Common {
         public DbSet<User> Users { get; set; }
 
         public DbSet<Location> Locations { get; set; }
+
+        public DbSet<Visit> Visits { get; set; }
     }
 }
