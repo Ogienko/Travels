@@ -17,4 +17,10 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Travels.Common">
+      <HintPath>..\Travels.Common\bin\Debug\netcoreapp2.0\Travels.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
