@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Travels.Common.DAL;
+using Travels.Common.Models;
 
 namespace Travels.Common {
 

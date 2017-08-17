@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Travels.Common.DAL {
+namespace Travels.Common.Models {
 
     [Table("locations")]
     public class Location {
