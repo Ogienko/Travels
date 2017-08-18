@@ -2,6 +2,7 @@
 using System;
 using System.Linq;
 using Travels.Common;
+using Travels.Common.Models;
 using Travels.Common.Models.BaseModels;
 
 namespace Travels.Controllers {
@@ -36,7 +37,7 @@ namespace Travels.Controllers {
             }
 
             var _user = _context.Users.FirstOrDefault(_ => _.Id == id);
-
+             
             if (_user == null) {
                 return NotFound();
             }
@@ -49,7 +50,21 @@ namespace Travels.Controllers {
 
             _context.SaveChanges();
 
-            return new JsonResult(null);
+            return new JsonResult(new Object());
+        }
+
+        [HttpPost("new")]
+        public IActionResult Post([FromBody]User user) {
+
+            if (!ModelState.IsValid) {
+                return BadRequest();
+            }
+
+            _context.Users.Add(user);
+
+            _context.SaveChanges();
+
+            return new JsonResult(new Object());
         }
     }
 }
