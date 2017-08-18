@@ -26,7 +26,6 @@ namespace Travels.Common.Models.BaseModels {
         public string Gender { get; set; }
 
         [Required]
-        [Range(-1262304000, 915148800)]
         [JsonProperty("birth_date")]
         public int? BirthDate { get; set; }
     }
